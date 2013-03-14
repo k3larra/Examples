@@ -8,7 +8,7 @@ package se.mah.k3;
 
 import java.util.Calendar;
 import java.util.Date;
-
+//Extends Runnable gör att denna klass kan köras i egen tråd 
 public class TaskRunner implements Runnable{
     private boolean threadIsAlive = true;
     private boolean isRunningTask = true;
