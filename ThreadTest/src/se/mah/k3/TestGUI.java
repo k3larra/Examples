@@ -1,13 +1,13 @@
 package se.mah.k3;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.EventQueue;
-import java.awt.SystemColor;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JLabel;
 
 public class TestGUI extends JFrame {
 
@@ -50,6 +50,7 @@ public class TestGUI extends JFrame {
 		setContentPane(contentPane);
 		lblNewLabel = new JLabel("Time now");
 		contentPane.add(lblNewLabel, BorderLayout.NORTH);
+		contentPane.setBackground(Color.BLUE);
 	}
 	
 	//Här är metoden som tråden anropar nu får vi en sträng tillbaka men här kan vi ta emot vad som helst
