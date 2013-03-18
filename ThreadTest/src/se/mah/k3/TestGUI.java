@@ -39,8 +39,7 @@ public class TestGUI extends JFrame {
 		TaskRunner task  = new TaskRunner(this,1000);
 		//Skapa en tråd att stoppa in uppgiften i
 		Thread t = new Thread(task);
-		//starta tråden
-		t.start(); 
+		
 		//Det vanliga krafset
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -50,6 +49,9 @@ public class TestGUI extends JFrame {
 		setContentPane(contentPane);
 		lblNewLabel = new JLabel("Time now");
 		contentPane.add(lblNewLabel, BorderLayout.NORTH);
+		
+		//starta tråden
+		t.start(); 
 	}
 	
 	//Här är metoden som tråden anropar nu får vi en sträng tillbaka men här kan vi ta emot vad som helst
