@@ -47,13 +47,8 @@ public class Test extends JFrame {
 		contentPane.add(testLabel, BorderLayout.NORTH);
 	}
 	
-	public void test(){
-		/////
-	}
-	
 	//en inre klass lite praktiskt eftersom man då direkt "når" GUI och inte behöver ha en referens 
-	class MyTask extends TimerTask {
-
+	private class MyTask extends TimerTask {
 	    public void run() {
 	    	Calendar c = Calendar.getInstance();
 	    	Date d = c.getTime();
